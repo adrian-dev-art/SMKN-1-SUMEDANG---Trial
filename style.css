@@ -168,54 +168,84 @@ a {
 
 .blog {
     display: grid;
-    grid-template-columns: repeat(12,1fr);
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2em;
     grid-template-rows: repeat(10,10vh);
+    padding: 0 10em ;
 }
 
-.blog .title {
+.blog .title-page{
     display: grid;
-    grid-row: 1;
-    grid-column: 6 / 8;
-    align-items: center;
-
-}
-
-.card1 {
-    display: grid;
-    grid-template-rows: repeat(8,1fr);
-    grid-template-columns: 1fr;
-    background-color: #151F62 ;
-    grid-column: 2 / 8;
-    grid-row: 2 / 11;
-    border-radius: 2em;
-}
-
-.card1 .img-card {
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
-    grid-column: 1;
-    grid-row: 1 / 9;
-    background-image: url(img/corporate-businessman-giving-presentation-large-audience.png);
-}
-
-.card1 .title {
-    background-color: #151F62 ;
-    grid-column: 1;
-    grid-row: 8 / 9;
+    grid-column: 1 / 3;
+    grid-row: 1 ;
     align-content: center;
-    text-align: center;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
+    justify-content: center;
+}
+
+.blog .card-main {
+    display: grid;
+    background-color: #151F62;
+    grid-template-rows: 8fr 1fr 1fr;
+    grid-column: 1 ;
+    grid-row: 2 / 10;
+    border-radius: 2em;
     color: white;
 }
 
-.card1 .content {
+.blog .card-main .img-card{
+    background-image: url(img/competitive-player-using-rgb-equipment-live-championship-playing-professional-powerful-computer-online-streaming-cyber-performing-during-gaming-tournament-using-technology-network-wireless.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius:2em ;
+    border-top-right-radius:2em ;
+}
+
+.blog  .card-main .title {
     display: grid;
-    background-color: #151F62 ;
-    color: white;
+    align-content: center;
     justify-content: center;
-    grid-column: 1;
-    grid-row: 9 / 10;
-    margin: 0.5em 3em ;
-    font-weight: 500;
+}
+
+.blog .card-main .heading {
+    display: grid;
+    padding: 0 2em;
+}
+
+.blog .left-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 40vh);
+    gap: 0.5em;
+}
+
+.blog .left-card .card {
+    background-color: #151F62;
+    color: white;
+    display: grid;
+    grid-template-rows: 8fr 1fr 1fr;
+    border-radius: 1em;
+}
+
+.blog .left-card .img-card {
+    background-image: url(Img/corporate-businessman-giving-presentation-large-audience.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius:1em ;
+    border-top-right-radius:1em ;
+}
+
+.blog .left-card .title {
+    font-size: 1.5rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog .left-card .heading {
+    font-size: 0.8rem;
+    align-items: center;
+    align-content: center;
+    padding: 0.3rem 1rem ;
 }
